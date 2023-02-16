@@ -49,6 +49,6 @@ def register(request):
     return render(request, "register.html")
 
 
-def logout(reqeust):
-    auth.login(request)
-    return render('/')
+def logout(reqeuest):
+    auth.logout(request)
+    return redirect('/')
